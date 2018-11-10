@@ -5,13 +5,13 @@
 	version="3.0">
 
 	<servlet>
-		<servlet-name>loginapplication</servlet-name>
-		<servlet-class>com.sds.LoginServlet</servlet-class>
+		<servlet-name>loginapplication</servlet-name><!-- 3 -->
+		<servlet-class>com.sds.LoginServlet</servlet-class><!-- 4 -->
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>loginapplication</servlet-name>
-		<url-pattern>/log</url-pattern>
+		<servlet-name>loginapplication</servlet-name><!-- 2 -->
+		<url-pattern>/log</url-pattern><!-- 1 -->
 	</servlet-mapping>
 
 
