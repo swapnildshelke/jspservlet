@@ -4,7 +4,16 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
 
+	<context-param>
+		<param-name>country</param-name>
+		<param-value>india</param-value>
+	</context-param>
+	
 	<servlet>
+		<init-param>
+			<param-name>city</param-name>
+			<param-value>pune</param-value>
+		</init-param>
 		<servlet-name>loginapplication</servlet-name><!-- 3 -->
 		<servlet-class>com.sds.LoginServlet</servlet-class><!-- 4 -->
 	</servlet>
@@ -13,8 +22,16 @@
 		<servlet-name>loginapplication</servlet-name><!-- 2 -->
 		<url-pattern>/log</url-pattern><!-- 1 -->
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>forgetPasswd</servlet-name><!-- 3 -->
+		<servlet-class>com.sds.ForgetPasswordServlet</servlet-class><!-- 4 -->
+	</servlet>
 
-
-
-
+	<servlet-mapping>
+		<servlet-name>forgetPasswd</servlet-name><!-- 2 -->
+		<url-pattern>/forgetPasswd</url-pattern><!-- 1 -->
+	</servlet-mapping>
+	
 </web-app>
