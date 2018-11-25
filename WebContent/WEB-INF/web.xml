@@ -36,4 +36,11 @@
 		<url-pattern>/forgetPasswd</url-pattern><!-- 1 -->
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>birthdayNotification</servlet-name><!-- 3 -->
+		<servlet-class>com.sds.BirthdayReminderServlet</servlet-class><!-- 4 -->
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	
 </web-app>
