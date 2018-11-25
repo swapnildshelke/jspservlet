@@ -16,6 +16,7 @@
 		</init-param>
 		<servlet-name>loginapplication</servlet-name><!-- 3 -->
 		<servlet-class>com.sds.LoginServlet</servlet-class><!-- 4 -->
+		<!-- <load-on-startup>0</load-on-startup> -->
 	</servlet>
 
 	<servlet-mapping>
@@ -27,6 +28,7 @@
 	<servlet>
 		<servlet-name>forgetPasswd</servlet-name><!-- 3 -->
 		<servlet-class>com.sds.ForgetPasswordServlet</servlet-class><!-- 4 -->
+		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
